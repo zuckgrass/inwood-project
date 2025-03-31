@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Inwood</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
@@ -9,6 +10,7 @@
 <body>
 	<div class="header">
 		<div class="top-panel">
+			<img src="images/menu.png" alt="Menu Icon" class="hamburgermenu">
 			<img src="images/Logo1.png" alt="logo" class="logo">
 			<div class="textButton">
 				<button >Home</button>
@@ -33,7 +35,10 @@
 		<h1 class="mainHeader" id="headercategory">Explore by Category</h1>
 		<div class="categoryContainer">
 			<div class="leftSideBar">
-				<input placeholder="Search" class="searchbar" type="text">
+				<div class="searchformobile">
+					<input placeholder="Search" class="searchbar" type="text">
+					<img src="images/menu.png" alt="Menu Icon" class="hamburgermenu" id="searchhamburger">
+				</div>
 				<div class="buttonList">
 					<div class="categoryButton">
 						<button>Bedroom</button>
@@ -85,13 +90,13 @@
 			<h1 class="mainHeader" id="headercategory">Popular Products</h1>
 			<div class="popularList">
 				<div class="popularProduct" id="greenProduct">
-					<img class="productImg" src="images/green.jpg" alt="Green Chair">
+					<img class="productImg" src="images/green.png" alt="Green Chair">
 					<h3 class="productBold">Armchair</h3>
 					<h4 class="productDesc">Light single chair</h4>
 					<h3 class="productBold">$145</h3>
 				</div>
 				<div class="popularProduct" id="blueProduct">
-					<img class="productImg" src="images/blue.jpg" alt="Blue Chair">
+					<img class="productImg" src="images/blue.png" alt="Blue Chair">
 					<h3 class="productBold">Premium Sofa</h3>
 					<h4 class="productDesc">Light single chair</h4>
 					<h3 class="productBold">$145</h3>
@@ -125,7 +130,7 @@
 			<div class="specificPackage">
 				<div class="imageContainer">
 					<img class="ImgSpecPac" src="images/packageImg.png" alt="package">
-					<button><img class="imgZoom" src="images/zoom.png"></button>
+					<button class="imgspeczoom"><img class="imgZoom" src="images/zoom.png"></button>
 				</div>
 				<div class="firstLinePrd">
 					<h3 class="productTitle">Larkin Wood Full Set</h3>
@@ -215,6 +220,7 @@
 					</div>
 				</div>
 			</div>
+			<img src="images/horizontal-short.png" alt="turner" class="horizontTurnerImg" id="specialHorizontTurner">
 		</div>
 	</div>
 	<div class= "ownCreation">
@@ -270,6 +276,84 @@
 	<div class="testimonials">
 		<h1 class="testimonialsHeader">Testimonials</h1>
 		<h2 class="testimonialsTitle">Over 15,000 happy customers.</h2>
+		<div class="testimonialsContainer">
+			<div class="imgquoteContainer">
+				<img class="quoteImg" src="images/packageImg.png" alt="testimonials">
+				<img class="quotesign" src="images/quote.png" alt="quote">
+			</div>
+			<div class="quoteContainer">
+				<p class="quoteParagraph">“My experience with Mark is a complete sucess, from customer service, wide range of products, clean store, purchasing experience, the newsletter.Thank you.”</p>
+				<h4 class="authorquote">Leona Paul</h4>
+				<p class="positionauthorquote">CEO of Floatcom</p>
+			</div>
+			<div class="quoteBtns">
+				<button class="turnUp" >←</button>
+				<button class="turnDown" >→</button>
+			</div>
+		</div>
+		<div class="horizontalturner" id="quoteturnercontainer">
+				<img src="images/horizont-turner.png" alt="turner" class="horizontTurnerImg" id="quoteturner">
+				<button class="seeAllreviewBtn">See all review  →</button>
+		</div>
+	</div>
+	<div class="newsletter">
+		<div class="newsletterContainer">
+			<img class="imgfornews" src="images/packageImg.png" alt="newsletter">
+			<div class="newsrightContainer">
+				<h1 class="firstlinenews">Join Our</h1>
+				<h1 class="secondlinenews">Newsletter</h1>
+				<p class="newsparagraph">Receive exclusive deals, discounts and many offers.</p>
+				<input class="emailnewsinput" placeholder="Enter your email">
+				<button class="subscribeNews">Subscribe</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footerContainer">
+			<div class="firstcolumnfooter">
+				<img class="logofooter" src="images/Logo1.png" alt="logo">
+				<div class="socialmediabtns">
+					<button class="socialmediabtn"><img src="images/facebook.png" alt="facebook"></button>
+					<button class="socialmediabtn"><img src="images/instagram.png" alt="insta"></button>
+					<button class="socialmediabtn"><img src="images/linkedin.png" alt="linkedin"></button>
+					<button class="socialmediabtn"><img src="images/basketball.png" alt="basketball"></button>
+					<button class="socialmediabtn"><img src="images/twitter.png" alt="twitter"></button>
+				</div>
+				<h3 class="ColumnTitlefooter">Address</h3>
+				<p class="footerparagraph">+123 654 987</p>
+				<p class="footerparagraph">877 The Bronx, NY</p>
+				<p class="footerparagraph">14568, USA</p>
+			</div>
+			<div class="pairofcolumnfooter">
+				<div class="columnfooter">
+					<h3 class="ColumnTitlefooter">My Account</h3>
+					<button class="Btnfoooter">Sign in</button>
+					<button class="Btnfoooter">Register</button>
+					<button class="Btnfoooter">Order status</button>
+				</div>
+				<div class="columnfooter">
+					<h3 class="ColumnTitlefooter">Help</h3>
+					<button class="Btnfoooter">Shipping</button>
+					<button class="Btnfoooter">Returns</button>
+					<button class="Btnfoooter">Sizing</button>
+				</div>
+			</div>
+			<div class="pairofcolumnfooter">
+				<div class="columnfooter">
+					<h3 class="ColumnTitlefooter">Shop</h3>
+					<button class="Btnfoooter">All Products</button>
+					<button class="Btnfoooter">Bedroom</button>
+					<button class="Btnfoooter">Dining Room</button>
+				</div>
+				<div class="columnfooter">
+					<h3 class="ColumnTitlefooter">Legal Stuff</h3>
+					<button class="Btnfoooter">Shipping & Delivery</button>
+					<button class="Btnfoooter">Terms & Conditions</button>
+					<button class="Btnfoooter">Privacy & Policy</button>
+				</div>
+			</div>
+		</div>
+		<p class="footerparagraph">Copyright ©2020 INWOOD. All Rights Reserved</p>
 	</div>
 </body>
 </html>
